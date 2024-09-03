@@ -10,5 +10,5 @@ def client():
 def test_home_page(client):
     """Test the home page"""
     response = client.get('/')
-    assert response.data == b'Hello Rajpreet singh jahagirdar!!!'
+    assert response.data == b'Hello Rajpreet!!!'
     assert response.status_code == 200
